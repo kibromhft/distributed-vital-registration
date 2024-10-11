@@ -25,6 +25,15 @@ This project is all about building a distributed system that makes it easy to ma
    git clone https://github.com/kibromhft/distributed-vital-registration.git  
    cd distributed-vital-registration
 
+2. **Set up Oracle Database**:  
+   - Ensure Oracle Database is running and accessible.  
+   - Configure the JDBC connection in the application.  
+
+3. **Compile and run**:  
+   - Use your IDE or command line to compile and run the client and server applications.  
+ 
+
+
 distributed-vital-registration/  
 ├── CLIENT/        # Client-side application  
 ├── RMISERVER/     # RMI server implementation   
