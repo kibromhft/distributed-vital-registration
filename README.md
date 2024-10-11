@@ -15,6 +15,7 @@ This project is all about building a distributed system that makes it easy to ma
 ### Prerequisites  
 - Java Development Kit (JDK) 8 or higher  
 - Oracle Database (for handling vital records data)
+- JDBC Driver (for connecting the Java application to Oracle Database)
 - IDE of your choice (e.g., IntelliJ IDEA, Eclipse)  
 
 ### Installation  
@@ -31,7 +32,7 @@ distributed-vital-registration/
    
 
 
-## Technologies Used
+### Technologies Used
 
 - **Java**: A high-level, object-oriented programming language for building applications.
 - **JavaFX**: A platform for creating rich desktop and internet applications with a modern UI.
