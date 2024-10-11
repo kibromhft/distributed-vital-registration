@@ -22,3 +22,8 @@ This project implements a distributed vital registration system utilizing Remote
    ```sh  
    git clone https://github.com/kibromhft/distributed-vital-registration.git  
    cd distributed-vital-registration
+
+distributed-vital-registration/  
+├── CLIENT/         # Client application directory  
+├── RMISERVER/      # RMI server application directory  
+└── RPCSERVER/      # RPC server application directory
