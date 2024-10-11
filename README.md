@@ -14,7 +14,7 @@ This project is all about building a distributed system that makes it easy to ma
 
 ### Prerequisites  
 - Java Development Kit (JDK) 8 or higher  
-- Apache Ant (for building the project)  
+- Oracle Database (for handling vital records data)
 - IDE of your choice (e.g., IntelliJ IDEA, Eclipse)  
 
 ### Installation  
