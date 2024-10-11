@@ -27,3 +27,10 @@ distributed-vital-registration/
 ├── CLIENT/        
 ├── RMISERVER/    
 └── RPCSERVER/    
+
+
+# Technologies Used
+
+- **Java**: A high-level, object-oriented programming language for building applications.
+- **JavaFX**: A platform for creating rich desktop and internet applications with a modern UI.
+- **Oracle Database**: A robust database management system known for scalability and security.
