@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#achormousemoved" prefHeight="546.0" prefWidth="1031.0">
+         <children>
+            <AnchorPane layoutX="-4.0" layoutY="-6.0" prefHeight="555.0" prefWidth="268.0" style="-fx-background-color: #C94059;">
+               <children>
+                  <JFXButton fx:id="birthbtn" layoutX="35.900001525878906" layoutY="137.89999389648438" on onAction="#birthbtn" onMouseMoved="#mouseMovedbirthagain" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #C94059; -fx-text-fill: white; -fx-font-size: 14;" text="         Birth" textFill="WHITE" />
+                  <JFXButton fx:id="deathbtn" layoutX="35.900001525878906" layoutY="182.89999389648438" onAction="#deathbtn" onMouseMoved="#mouseMoveddeath" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #C94059; -fx-text-fill: white; -fx-font-size: 14;" text="           Death" textFill="WHITE" />
+                  <JFXButton fx:id="marriagebtn" layoutX="35.900001525878906" layoutY="227.89999389648438" onAction="#birthbtn" onMouseMoved="#mouseMovedmarr" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #C94059; -fx-text-fill: white; -fx-font-size: 14;" text="                Marriage" textFill="WHITE" />
+                  <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="70.9000015258789" layoutY="239.89999389648438" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Wedding_Rings_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="70.9000015258789" layoutY="189.89999389648438" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Headstone_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="72.9000015258789" layoutY="148.89999389648438" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Birthday_Cake_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="2.0" layoutY="-3.0" prefHeight="73.0" prefWidth="266.0" style="-fx-background-color: #E34F43; -fx-text-fill: white; -fx-font-size: 18;" text="Vital information Registration System" />
+                  <JFXButton fx:id="adoptionbtn" layoutX="40.0" layoutY="320.0" onAction="#birthbtn" onMouseMoved="#mouseMovedadop" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #C94059; -fx-text-fill: white; -fx-font-size: 14;" text="            Adoption" textFill="WHITE" />
+                  <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="71.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Guardian_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="divorcebtn" layoutX="40.0" layoutY="273.0" onAction="#birthbtn" onMouseMoved="#mouseMoveddivorce" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #C94059; -fx-text-fill: white; -fx-font-size: 14;" text="            Divorce" textFill="WHITE" />
+                  <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="71.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Dislike_64px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="birthanchor" layoutX="243.0" layoutY="-4.0" style="-fx-background-color: #C0324C;" visible="false">
+               <children>
+                  <Label layoutX="60.0" layoutY="48.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Full Name" />
+                  <Label layoutX="61.0" layoutY="82.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Sex" />
+                  <Label layoutX="57.0" layoutY="116.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="DOB" />
+                  <Label layoutX="55.0" layoutY="146.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Country of birth " />
+                  <Label layoutX="56.0" layoutY="174.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Region/City Administration" />
+                  <Label layoutX="60.0" layoutY="194.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Zone/City Administration" />
+                  <Label layoutX="58.0" layoutY="221.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Woreda" />
+                  <Label layoutX="58.0" layoutY="246.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Kebele" />
+                  <Label layoutX="57.0" layoutY="272.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Nationality " />
+                  <Label layoutX="57.0" layoutY="304.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Mother's Full name" />
+                  <Label layoutX="57.0" layoutY="344.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Mother's Nationality " />
+                  <Label layoutX="60.0" layoutY="382.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Father's Full name" />
+                  <Label layoutX="63.0" layoutY="419.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Father's Nationality" />
+                  <Label layoutX="64.0" layoutY="452.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Date of registraion" />
+                  <Label layoutX="63.0" layoutY="488.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Date of certificate issued" />
+                  <Label layoutX="66.0" layoutY="525.0" style="-fx-text-fill: white; -fx-font-size: 15; -fx-font-weight: bold;" text="Civil Registrar Full Name" />
+                  <JFXButton fx:id="exitbtn" layoutX="742.0" minHeight="18.0" minWidth="26.0" onAction="#exitthesytem" prefHeight="22.0" prefWidth="26.0" style="-fx-background-color: #C0324C; -fx-cursor: hand;" text="" />
+                  <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="763.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Delete_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="death_display" layoutX="260.0" prefHeight="546.0" prefWidth="770.0" visible="false">
+               <children>
+                  <JFXTextField layoutX="234.0" layoutY="96.0" prefHeight="24.0" prefWidth="243.0" />
+                  <JFXTextField layoutX="234.0" layoutY="136.0" prefHeight="24.0" prefWidth="243.0" />
+                  <JFXTextField layoutX="234.0" layoutY="184.0" prefHeight="24.0" prefWidth="243.0" />
+                  <JFXTextField layoutX="234.0" layoutY="232.0" prefHeight="24.0" prefWidth="243.0" />
+                  <Label layoutX="85.0" layoutY="112.0" text="Label" />
+                  <Label layoutX="85.0" layoutY="152.0" text="Label" />
+                  <Label layoutX="85.0" layoutY="200.0" text="Label" />
+                  <Label layoutX="85.0" layoutY="256.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

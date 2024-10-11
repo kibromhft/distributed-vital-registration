@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.4.40.227:8080/RPC/RPC?wsdl" uri="wsdl/10.4.40.227_8080/RPC/RPC.wsdl"/>
+    <system systemId="http://10.4.40.227:8080/RPC/RPC?xsd=1" uri="wsdl/10.4.40.227_8080/RPC/RPC.xsd_1.xsd"/>
+</catalog>

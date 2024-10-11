@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://SERVER/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://SERVER/">
+
+<xs:element name="adoption" type="tns:adoption"/>
+
+<xs:element name="adoptionResponse" type="tns:adoptionResponse"/>
+
+<xs:element name="birth" type="tns:birth"/>
+
+<xs:element name="birthResponse" type="tns:birthResponse"/>
+
+<xs:element name="death" type="tns:death"/>
+
+<xs:element name="deathResponse" type="tns:deathResponse"/>
+
+<xs:element name="divorce" type="tns:divorce"/>
+
+<xs:element name="divorceResponse" type="tns:divorceResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="marriage" type="tns:marriage"/>
+
+<xs:element name="marriageResponse" type="tns:marriageResponse"/>
+
+<xs:complexType name="birth">
+<xs:sequence>
+<xs:element name="birth_id" type="xs:string" minOccurs="0"/>
+<xs:element name="fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="gender" type="xs:string" minOccurs="0"/>
+<xs:element name="dob" type="xs:string" minOccurs="0"/>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="region" type="xs:string" minOccurs="0"/>
+<xs:element name="zone" type="xs:string" minOccurs="0"/>
+<xs:element name="woreda" type="xs:int"/>
+<xs:element name="nationality" type="xs:string" minOccurs="0"/>
+<xs:element name="mom_fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="mom_nat" type="xs:string" minOccurs="0"/>
+<xs:element name="fat_fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="fat_nationality" type="xs:string" minOccurs="0"/>
+<xs:element name="registration_date" type="xs:string" minOccurs="0"/>
+<xs:element name="issued_date" type="xs:string" minOccurs="0"/>
+<xs:element name="civil_fullname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="birthResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divorce">
+<xs:sequence>
+<xs:element name="divorce_id" type="xs:string" minOccurs="0"/>
+<xs:element name="family_name" type="xs:string" minOccurs="0"/>
+<xs:element name="husband_fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="wife_fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="divorce_type" type="xs:string" minOccurs="0"/>
+<xs:element name="divorce_reason" type="xs:string" minOccurs="0"/>
+<xs:element name="divorce_date" type="xs:string" minOccurs="0"/>
+<xs:element name="divorce_certificate" type="xs:string" minOccurs="0"/>
+<xs:element name="civil_fullname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divorceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="adoption">
+<xs:sequence>
+<xs:element name="adoption_id" type="xs:string" minOccurs="0"/>
+<xs:element name="parent_name" type="xs:string" minOccurs="0"/>
+<xs:element name="child_name_before" type="xs:string" minOccurs="0"/>
+<xs:element name="child_name_after" type="xs:string" minOccurs="0"/>
+<xs:element name="child_relationship" type="xs:string" minOccurs="0"/>
+<xs:element name="child_dob" type="xs:string" minOccurs="0"/>
+<xs:element name="child_gender" type="xs:string" minOccurs="0"/>
+<xs:element name="adoption_date" type="xs:string" minOccurs="0"/>
+<xs:element name="adoption_registration" type="xs:string" minOccurs="0"/>
+<xs:element name="civil_fullname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="adoptionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="marriage">
+<xs:sequence>
+<xs:element name="M_ID" type="xs:int"/>
+<xs:element name="wife_birth_id" type="xs:string" minOccurs="0"/>
+<xs:element name="WifePic" type="xs:string" minOccurs="0"/>
+<xs:element name="husband_birth_id" type="xs:string" minOccurs="0"/>
+<xs:element name="HusbandPic" type="xs:string" minOccurs="0"/>
+<xs:element name="marriage_date" type="xs:string" minOccurs="0"/>
+<xs:element name="region" type="xs:string" minOccurs="0"/>
+<xs:element name="zone" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="subcity" type="xs:string" minOccurs="0"/>
+<xs:element name="woreda" type="xs:int"/>
+<xs:element name="kebele" type="xs:int"/>
+<xs:element name="civil_fullname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="marriageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="death">
+<xs:sequence>
+<xs:element name="death_id" type="xs:string" minOccurs="0"/>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_fullname" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_gender" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_dob" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_nat" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_place" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_dod" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_registration" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_certifcate" type="xs:string" minOccurs="0"/>
+<xs:element name="deceased_civil" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deathResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
