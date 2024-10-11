@@ -29,7 +29,7 @@ distributed-vital-registration/
 └── RPCSERVER/    
 
 
-# Technologies Used
+## Technologies Used
 
 - **Java**: A high-level, object-oriented programming language for building applications.
 - **JavaFX**: A platform for creating rich desktop and internet applications with a modern UI.
