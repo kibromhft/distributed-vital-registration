@@ -24,6 +24,6 @@ This project implements a distributed vital registration system utilizing Remote
    cd distributed-vital-registration
 
 distributed-vital-registration/  
-├── CLIENT/         # Client application directory  
-├── RMISERVER/      # RMI server application directory  
-└── RPCSERVER/      # RPC server application directory
+├── CLIENT/        
+├── RMISERVER/    
+└── RPCSERVER/    
