@@ -34,10 +34,10 @@ This project is all about building a distributed system that makes it easy to ma
  
 
 
-distributed-vital-registration/  
-├── CLIENT/        # Client-side application  
-├── RMISERVER/     # RMI server implementation   
-└── RPCSERVER/     # RPC server implementation 
+distributed-vital-registration/
+├── CLIENT/         # Client-side application
+├── RMISERVER/      # RMI server implementation
+└── RPCSERVER/      # RPC server implementation
    
 
 
